@@ -40,6 +40,11 @@ header nav ul li{
     margin-right: 30px;
     padding: 10px;
 }
+header nav ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
 
 span {
     color: var(--roxo-vibrante);
