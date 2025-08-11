@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/src/assets/back.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0));
+}
+
+header h1 {
+    font-size: 3rem;
+    padding-left: 30px;
+}
+
+.menu-header {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    color: #fff;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+header nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+span {
+    color: var(--roxo-vibrante, #9c7fff);
+    margin-left: 10px;
+}
+
+/* ===== Layout principal ===== */
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto {
+    flex: 1 1 60%;
+    max-width: 600px;
+    order: 1;
+}
+
+.texto h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    flex: 0 0 300px;
+    max-width: 300px;
+    order: 2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#comprar {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#comprar:hover {
+    background: #45a049;
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .texto, .card {
+        max-width: 100%;
+        flex: 1 1 auto;
+        order: initial;
+    }
+
+    .texto h1 {
+        font-size: 1.6rem;
+    }
+
+    .texto p {
+        font-size: 0.98rem;
+    }
+}
